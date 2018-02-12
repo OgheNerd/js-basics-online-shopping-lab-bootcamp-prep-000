@@ -24,7 +24,9 @@ function viewCart() {
   // write your code here
   const l = cart.length;
 
-  (!l) ? console.log("Your shopping cart is empty.") : ''
+  if (!l) {
+     return console.log("Your shopping cart is empty.");
+   }
 
   let itemsAndPrices = [];
 
