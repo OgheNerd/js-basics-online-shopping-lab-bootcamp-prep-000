@@ -40,7 +40,10 @@ function viewCart() {
     case 1:
       break;
     case 2:
-      itemAndPrices = itemAndPrices.join(` and `)
+      itemAndPrices = itemAndPrices.join(` and `);
+      break;
+    default:
+      itemAndPrices[l-1] = "and ".concat(itemAndPrices[l-1]);
       
   }
 }
