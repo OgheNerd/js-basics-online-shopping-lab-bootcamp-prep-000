@@ -26,7 +26,11 @@ function viewCart() {
 
   (!l) ? console.log("Your shopping cart is empty.") : ''
 
-
+  for (var i = 0; i < l; i++) {
+    let itemAndPrice = cart[i];
+    let item = Object.keys(itemAndPrice)[0];
+    let price =  itemAndPrice[item];
+  }
 }
 
 function total() {
