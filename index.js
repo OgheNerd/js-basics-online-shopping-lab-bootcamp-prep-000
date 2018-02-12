@@ -26,26 +26,29 @@ function viewCart() {
 
   (!l) ? console.log("Your shopping cart is empty.") : ''
 
-  let itemAndPrices = [];
+  let itemsAndPrices = [];
 
   for (var i = 0; i < l; i++) {
     let itemAndPrice = cart[i];
     let item = Object.keys(itemAndPrice)[0];
     let price =  itemAndPrice[item];
 
-    itemAndPrices.push(`${item} at \$${price}`);
+    itemsAndPrices.push(`${item} at \$${price}`);
   }
 
-  switch (itemAndPrices.length) {
+  switch (itemsAndPrices.length) {
     case 1:
       break;
     case 2:
-      itemAndPrices = itemAndPrices.join(` and `);
+      itemsAndPrices = itemsAndPrices.join(` and `);
       break;
     default:
-      itemAndPrices[l-1] = "and ".concat(itemAndPrices[l-1]);
-      
+      itemsAndPrices[l-1] = "and ".concat(itemsAndPrices[l-1]);
+      itemsAndPrices = itemsAndPrices.join(", ");
   }
+
+  console.log(`In your cart, you have ${itemAndPrices}`);
+  
 }
 
 function total() {
