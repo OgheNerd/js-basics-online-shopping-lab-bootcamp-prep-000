@@ -24,9 +24,9 @@ function viewCart() {
   // write your code here
   const l = cart.length;
 
-  (!l) ? console.log("Your shopping cart is empty."); : ''
+  (!l) ? console.log("Your shopping cart is empty.") : ''
 
-  
+
 }
 
 function total() {
