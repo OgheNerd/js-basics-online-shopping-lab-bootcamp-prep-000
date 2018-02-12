@@ -47,7 +47,7 @@ function viewCart() {
       itemsAndPrices = itemsAndPrices.join(", ");
   }
 
-  console.log(`In your cart, you have ${itemAndPrices}`);
+  console.log(`In your cart, you have ${itemsAndPrices}`);
 
 }
 
