@@ -28,19 +28,19 @@ function viewCart() {
 
   let itemsAndPrices = [];
 
-  for (var i = 0; i < l; i++) {
+  for (let i = 0; i < l; i++) {
     let itemAndPrice = cart[i];
     let item = Object.keys(itemAndPrice)[0];
-    let price =  itemAndPrice[item];
+    let price = itemAndPrice[item];
 
     itemsAndPrices.push(`${item} at \$${price}`);
   }
 
-  switch (itemsAndPrices.length) {
+  switch(itemsAndPrices.length) {
     case 1:
       break;
     case 2:
-      itemsAndPrices = itemsAndPrices.join(` and `);
+      itemsAndPrices = itemsAndPrices.join(" and ");
       break;
     default:
       itemsAndPrices[l-1] = "and ".concat(itemsAndPrices[l-1]);
