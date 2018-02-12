@@ -48,7 +48,7 @@ function viewCart() {
   }
 
   console.log(`In your cart, you have ${itemAndPrices}`);
-  
+
 }
 
 function total() {
